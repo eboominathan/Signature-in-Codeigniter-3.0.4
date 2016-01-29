@@ -6,9 +6,10 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
+		$this->load->view('header');
 		$this->load->view('single');
 	}
-	Public function get_sign()
+	Public function insert_single_signature()
 	{
 
 	$img = $_POST['image'];
@@ -19,14 +20,15 @@ class Welcome extends CI_Controller {
 	$success = file_put_contents($file, $data);
 	$image=str_replace('./','',$file);
 
-     echo '<img src="'.base_url().$image.'">';
+    $this->welcome_model->insert_single_signature($image);
+	 echo '<img src="'.base_url().$image.'">';
 
      
 	}
 	public function multiple()
 	{	
 			$this->load->view('header');
-		$this->load->view('multiple_sign');
+		    $this->load->view('multiple_sign');
 	}
 
 	Public function get_multiple()
@@ -41,7 +43,7 @@ class Welcome extends CI_Controller {
 		
 
 	$this->welcome_model->insert_signature($image);
-	 echo '<img src="'.base_url().$image.'">';
+	 echo '<img src="'.base_url().'signature-image/'.$image.'">';
     
 
 	}

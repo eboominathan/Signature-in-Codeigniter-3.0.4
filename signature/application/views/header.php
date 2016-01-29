@@ -16,9 +16,9 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/theme1.css"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/elements.css"/>
 
-<!-- from cdn  -->
+<!-- from cdn  
 		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<!-- CDN  -->
+	CDN  -->
 		<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>assets/css/animate.css">
 
 

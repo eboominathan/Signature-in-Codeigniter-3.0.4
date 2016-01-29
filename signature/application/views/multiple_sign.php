@@ -2,6 +2,7 @@
 	<style type="text/css">
 		#errors:empty{display: none;}
 		input[type="checkbox"]:not(old), input[type="radio"]:not(old){ opacity:10;}
+		img{    margin: 17px;}
 	</style>
 	<form method="post">
 		<section>
@@ -40,7 +41,7 @@
 		<div class="positions-fix">
 			<ul>
 				<li class="pull-left">
-					<input type="text" class="form-control" id="numbercount" value="1">
+					<input type="hidden" class="form-control" id="numbercount" value="1">
 				</li>
 				<li class="pull-right">
 					<button type="submit" class="btn btn-success" id="submit" name="submit">Submit</button>
