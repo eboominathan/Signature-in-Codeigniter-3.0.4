@@ -1,3 +1,4 @@
+<title>Single Signature</title>
  <div class="center" align="center"> 
  <h1>Signature in Codeigniter 3.0.4</h1>
 </div>
