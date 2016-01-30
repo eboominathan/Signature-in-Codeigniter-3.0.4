@@ -45,10 +45,12 @@
 				</li>
 				<li class="pull-right">
 					<button type="submit" class="btn btn-success" id="submit" name="submit">Submit</button>
+					<a href="<?php echo base_url();?>welcome" class="btn btn-primary">Go to Single Sign Demo</a>
 				</li>
 				<li></li>
 			</ul>
 		</div>
+
 
 		<div class="modal fade" id="sign-modal" tabindex="-1" role="dialog" aria-hidden="true">
 			<div class="modal-dialog">
@@ -62,11 +64,11 @@
 
 						<!--Signature Values--> 
 
-						<input type="text" id="rowno" name="rowno" value="<?php echo rand();?>">
+						<input type="hidden" id="rowno" name="rowno" value="<?php echo rand();?>">
 
-						<input type="text" id="signname" value="">
-						<input type="text" id="project" value="Injury">
-						<input type="text" id="scount" value="">
+						<input type="hidden" id="signname" value="">
+						
+						<input type="hidden" id="scount" value="">
 						<!----> 
 
 					</div>
@@ -328,7 +330,16 @@
 </script>
 
 
+<style type="text/css">
+	.previewsign{
+		height:83px;
+	}
 
+	img
+	{
+		margin: 0px;
+	}
+</style>
 
 </body>
 </html>

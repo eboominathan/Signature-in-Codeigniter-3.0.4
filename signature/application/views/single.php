@@ -1,49 +1,10 @@
-<script src="<?php echo base_url();?>assets/js/jquery-2.1.3.min.js"></script> 
-<script src="<?php echo base_url();?>assets/js/bootstrap.min.js" ></script> 
-<script type="text/javascript" src="<?php echo base_url();?>assets/js/signature-pad.js"></script> 
-<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/bootstrap.css">
-<body>
-<style type="text/css">
-    
-    .previewsign
-    {   
-    border: 1px dashed #ccc;
-    border-radius: 5px;
-    color: #bbbabb;
-    height: 253px;
-    width: 46%;
-    text-align: center;
-    float: right;
-    vertical-align: middle;
-    top: 73px;
-    position: fixed;
-    right: 35px;
-  }
-  .m-signature-pad-body
-  {
-    border: 1px dashed #ccc;
-    border-radius: 5px;
-    color: #bbbabb;
-    height: 253px;
-    width: 46%;
-    text-align: center;
-    float: right;
-    vertical-align: middle;
-    top: 73px;
-    position: fixed;
-    left: 33px;
-  }
-  .m-signature-pad-footer
-  {
-    bottom: 250px;
-    left: 218px;
-    position: fixed;
-  }
-</style>
+ <div class="center" align="center"> 
+ <h1>Signature in Codeigniter 3.0.4</h1>
+</div>
 
-  <section>
+ <section>
     <div class="container">
-      <div class="boxarea">
+      <div class="boxarea" style="margin:-54px">
         <h1>Sign Below !</h1>
         <div class="signature-pad" id="signature-pad">
           <div class="m-signature-pad">
@@ -54,14 +15,18 @@
           <div class="m-signature-pad-footer">
             <button type="button"  id="save2" data-action="save" class="btn btn-primary"><i class="fa fa-check"></i> Save</button>
             <button type="button" data-action="clear"  class="btn btn-danger"><i class="fa fa-trash-o"></i> Clear</button>
-           
+           <a href="<?php echo base_url();?>welcome/multiple" class="btn btn-primary">Multiple</a>
           </div>
         </div>
       </div>
     </div>
+    
   </section>
 
-  <input type="text" value="<?php echo rand();?>" id="rowno">
+<!-- random id generated here  -->
+  <input type="hidden" value="<?php echo rand();?>" id="rowno">
+
+
   <section>
     <div class="container">
       <div class="boxarea">
@@ -74,13 +39,9 @@
 </div>
 </section>
 
-<style type="text/css">
-  .img
-  {
-        right: 0;
-    position: absolute;
-  }
-</style>
+
+
+
 
   <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -98,6 +59,10 @@
     </div>
   </div>
 </div>
+
+
+
+
 
   <script>
 
@@ -142,5 +107,47 @@
     }); 
 
   </script>
+    <style type="text/css">
+    
+    .previewsign
+    {   
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    color: #bbbabb;
+    height: 253px;
+    width: 46%;
+    text-align: center;
+    float: right;
+    vertical-align: middle;
+    top: 73px;
+    position: fixed;
+    right: 35px;
+  }
+  .m-signature-pad-body
+  {
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    color: #bbbabb;
+    height: 253px;
+    width: 46%;
+    text-align: center;
+    float: right;
+    vertical-align: middle;
+    top: 73px;
+    position: fixed;
+    left: 33px;
+  }
+  .m-signature-pad-footer
+  {
+    bottom: 250px;
+    left: 218px;
+    position: fixed;
+  }
+    .img
+  {
+        right: 0;
+    position: absolute;
+  }
+</style>
 </body>
 </html>
